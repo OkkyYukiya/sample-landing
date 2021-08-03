@@ -1,0 +1,27 @@
+.root {
+  color: rgb(97, 192, 152);
+  font-size: 42px;
+  font-weight: 700;
+
+  @media screen and (max-width: 900px) {
+    font-size: 30px;
+  }
+}
+
+.root {
+  opacity: 0;
+  animation-name: root;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes root {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
